@@ -4,7 +4,7 @@
 int main() {
     size_t size = 100* 1024 * 1024; // 每次分配 100MB
     void *ptr;
-    size_t allocations = 0;
+    size_t allocations = 1;
 
     while (1) {
         ptr = malloc(size);
