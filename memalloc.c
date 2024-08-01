@@ -9,10 +9,10 @@ int main() {
     while (1) {
         ptr = malloc(size);
         if (ptr == NULL) {
-            printf("Memory allocation %zu MB allocations.\n", allocations * 100);
+            printf("Memory allocation failed %zu MB allocations.\n", sizeof(ptr));
             break;
         } else {
-            printf("Memory allocation failed after %zu MB allocations.\n", allocations * 100);
+            printf("Memory allocation after %zu MB allocations.\n", sizeof(ptr));
         }
         allocations++;
     }
